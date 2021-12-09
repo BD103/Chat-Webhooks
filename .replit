@@ -1,2 +1,2 @@
-run = "echo Please configure the run button"
+run = "poetry run python -m chat_webhooks"
 language = "nix"

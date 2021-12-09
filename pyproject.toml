@@ -1,21 +1,22 @@
 [tool.poetry]
-name = "pypackage"
-version = "0.1.0"
-description = "Example Python Package"
+name = "chat-webhooks"
+version = "1.0.0"
+description = "Interact and easily use Google Chat room webhooks."
 license = "Apache-2.0"
 authors = ["BD103 <dont@stalk.me>"]
 readme = "README.md"
 homepage = "https://bd103.github.io"
-repository = "https://github.com/BD103/Python-Template"
+repository = "https://github.com/BD103/Chat-Webhooks"
 
 [tool.poetry.dependencies]
 python = "^3.9"
+requests = "^2.26.0"
+click = "^8.0.3"
 
 [tool.poetry.dev-dependencies]
 black = "^21.12b0"
 isort = "^5.10.1"
 flake8 = "^4.0.1"
-# Pytest is optional
 pytest = "^6.2.5"
 pytest-cov = "^3.0.0"
 
