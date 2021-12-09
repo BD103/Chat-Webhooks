@@ -1,0 +1,2 @@
+run = "echo Please configure the run button"
+language = "nix"

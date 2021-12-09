@@ -1,0 +1,37 @@
+[tool.poetry]
+name = "pypackage"
+version = "0.1.0"
+description = "Example Python Package"
+license = "Apache-2.0"
+authors = ["BD103 <dont@stalk.me>"]
+readme = "README.md"
+homepage = "https://bd103.github.io"
+repository = "https://github.com/BD103/Python-Template"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+[tool.poetry.dev-dependencies]
+black = "^21.12b0"
+isort = "^5.10.1"
+flake8 = "^4.0.1"
+# Pytest is optional
+pytest = "^6.2.5"
+pytest-cov = "^3.0.0"
+
+[tool.black]
+line-length = 88
+target-version = ["py39"]
+extend-exclude = '''
+/(
+    | .venv
+)/
+'''
+
+[tool.isort]
+profile = "black"
+extend_skip = [".cache"]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
