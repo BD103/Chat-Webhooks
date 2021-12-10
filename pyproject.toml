@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "chat-webhooks"
-version = "1.0.0"
+version = "1.0.1"
 description = "Interact and easily use Google Chat room webhooks."
 license = "Apache-2.0"
 authors = ["BD103 <dont@stalk.me>"]
