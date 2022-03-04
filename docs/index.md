@@ -23,9 +23,9 @@ chat = ChatWebhook(url)
 chat.send("Hello, world!")
 ```
 
-## Environmental Variables
+## Interactive Client
 
-If you don't pass a webhook url, you can also set `WEBHOOK_URL` in shell. Chat Webhooks will automatically detect this.
+If you do not want to write a custom client, you can use the built in one.
 
 ```shell
 # Set variable
@@ -33,16 +33,7 @@ export WEBHOOK_URL="URL"
 
 python -m chat_webhooks
 # Or
-python with_env_vars.py
-```
-
-```python
-# with_env_vars.py
-from chat_webhooks import ChatWebhook
-
-chat = ChatWebhook()
-
-chat.send("Hello, world!")
+python -m chat_webhooks --webhook-url "URL"
 ```
 
 ## Custom JSON
